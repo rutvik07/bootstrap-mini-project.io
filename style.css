@@ -447,7 +447,7 @@ body
 {
     .aboutmaindiv
     {
-        height: ;
+        margin-left: 0px;
     }
 }
 /* ================SKILL DIV================= */
@@ -892,11 +892,7 @@ body
     {
         margin-left: 0px;
     }
-    .modal-content .fa
-    {
-        /* position: relative !important;
-        right: 300px !important; */
-    }
+   
    
 }
 /* ===============SERVICE SECTION=============== */
@@ -1124,11 +1120,7 @@ body
     font-size: 17px;
     opacity: 0.9;
 }
-.subject
-{
-    /* width: 650px !important; */
 
-}
 .form textarea
 {
     height: 230px;
