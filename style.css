@@ -3,7 +3,7 @@ body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    
+    /* background-color: black; */
   }
   div,
   h1,
@@ -152,12 +152,14 @@ body
 {
     background-image: url(images/hero-bg.jpg);
     height: 753px;
+    max-width: 100%;
     background-size: cover;
     z-index: -1;
     position: relative;
     background-attachment: fixed;
     background-position-x: center;
     background-position-y: top;
+    
 }
 
 .maindiv:before 
@@ -253,7 +255,6 @@ body
     {
         display: none;
     }
-   
     .sec1layer
     {
         height: 600px;
@@ -1051,113 +1052,111 @@ body
     }
 }
 /* ====================CONTACT================ */
-.contactdiv
-{
+.contact-div{
+    max-width: 100%;
     height: auto;
-    margin-left: 300px;
-}
-.col-md-5
-{
     background-color: white;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.192);
-    width: 420px;
-}
-.locationhead
-{
-    font-size: 22px;
-}
-.locationdiv .fa
-{
-    font-size: 25px;
-    color: #149ddd;
-    height: 50px;
-    width: 50px;
-    background-color: #dff3fc;
+    margin-left: 300px;
+  }
+  .con-h1{
+    color: #2c2f3f;
+    font-size: 30px;
+  }
+  .col-md-5{
+    background-color: white;
+    width: 420px; 
+  }
+  .col-lgg{
+    background-color: white;
+  }
+  .col-div .fa{
+    font-size: 30px;
     padding: 10px 0px 0px 17px;
-    border-radius: 50%;
-}
-.locationdiv .fa-envelope-o
-{
-    font-size: 25px;
-    color: #149ddd;
-    height: 50px;
-    width: 50px;
     background-color: #dff3fc;
-    padding: 10px 0px 0px 14px !important;
+    width: 50px;
     border-radius: 50%;
-}
-.locationdiv:hover .fa
-{
+    height: 50px;
+    color: #149ddd;
+  }
+  .col-div .fa-envelope{
+    padding: 10px 0px 0px 13px;
+    font-size: 25px;
+  }
+  .col-div .fa-mobile{
+    padding: 7px 0px 0px 17px;
+    font-size: 35px;
+  }
+  .col-div:hover .fa{
     background-color: #149ddd;
     color: white;
-}
-.locationt1
-{
+  }
+  .lo-h1{
+    font-size: 22px;
+  }
+  .lo-p{
+    font-size: 15px;
     color: #173b6c;
-    font-size: 14px;
-    
-}
-.col-lg
-{
-    background-color: white;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.192);
-}
-.form-control
-{
-    /* width: 300px; */
-    height: 45px;
-    border-radius: unset;
-    
-    
-}
-.form-control:focus
-{
-    box-shadow: unset;
-    outline-color: none;
-}
-.l1
-{
+  }
+  form label{
     font-size: 17px;
-    opacity: 0.9;
-}
-
-.form textarea
-{
-    height: 230px;
-}
-.form .btn
-{
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+  .form-control{
+    border-radius: unset;
+    font-weight: bold;
+    height: 45px;
+    font-family: 'Poppins';
+  }
+  .form-control:focus{
+    box-shadow: unset;
+  }
+  .form textarea{
+    height: 200px;
+  }
+  .form .btn{
+    background-color: #149ddd;
+    color: white;
     height: 45px;
     width: 150px;
-    background-color: #149ddd;
-    color: white;
-}
-.form .btn:hover
-{
-    background-color: #43b0e2;
-}
-.col-lgg
-{
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.192);
-}
-.contactdiv
-{
-    margin-bottom: 130px;
-}
-@media screen and (max-width:1200px)
-{
-    .contactdiv
-    {
-        margin-left: 0px;
+  }
+  .form .btn:hover{
+    background-color: #149dddd8;
+  }
+  @media screen and (max-width:1200px){
+    .contact-div{
+      margin-left: 0px;
     }
-}
-@media screen and (max-width:320px)
-{
-    .mapframe
-    {
-        width: 300px !important;
-    }
-}
+  }
+  @media screen and (max-width:426px){
+      .col-div .fa{
+        font-size: 23px;
+        padding: 7px 0px 0px 14px;
+        background-color: #dff3fc;
+        width: 40px;
+        border-radius: 50%;
+        height: 38px;
+        color: #149ddd; 
+      }
+      .col-div .fa-envelope{
+        padding: 8px 0px 0px 10px;
+        font-size: 20px;
+      }
+      .col-div .fa-mobile{
+        padding: 5px 0px 0px 14px;
+        font-size: 30px;
+      }
+      .lo-h1{
+        font-size: 18px;
+      }
+      .lo-p{
+        font-size: 13px;
+        color: #173b6c;
+      }
+      form label{
+        font-size: 15px;
+      }
+  }
 /* ================FOOTER================== */
 .footer
 {
